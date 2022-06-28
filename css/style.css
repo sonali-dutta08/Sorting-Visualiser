@@ -84,19 +84,20 @@ body {
 }
 .array {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   min-height: 100%;
   height: 100%;
   padding: 1rem;
   flex-direction: row;
+  background: #ede6ea;
 }
 .cell {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   flex: 0.5;
   width: 0.000001%;
   margin: 1px;
-  background-color: #d6d6d6;
+  background-color: #bbb5b5;
   resize: horizontal;
   position: relative;
   transition: all 0.4s ease-in;
@@ -135,10 +136,20 @@ footer {
   font-size: 18px;
   color: #2c3e50;
   padding: 1.6em;
+  visibility: hidden;
 }
 .footer > p:nth-child(1) {
   margin-bottom: 0.6em;
+  visibility: hidden;
 }
+#time ,
+#Ttime
+{
+  font-weight: bold;
+}
+/* .footer > p:nth-child(2) {
+  margin-bottom: 0.6em;
+} */
 .link {
   text-decoration: none;
   font-weight: bold;
